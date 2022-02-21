@@ -21,9 +21,10 @@ cd ~/android/lineage &&\
 source build/envsetup.sh &&\
 lunch lineage_rosy-userdebug &&\
 croot &&\
+make sepolicy | tee logs.txt &&\
 make bootimage | tee logs.txt &&\
 
-#make sepolicy | tee logs.txt &&\
+
 
 cd ~/android/lineage &&\
 curl --upload-file ./out/target/product/rosy/*.img https://transfer.sh/kernel.img
