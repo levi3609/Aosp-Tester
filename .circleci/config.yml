@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: "Build"
-          command: curl https://raw.githubusercontent.com/nhAsif/build-scripts/master/.build.sh | bash
+          command: curl https://raw.githubusercontent.com/levi3609/Aosp-Tester/main/.build.sh | bash
